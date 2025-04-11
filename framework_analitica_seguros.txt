@@ -1,0 +1,79 @@
+
+Framework Base - Analítica Avanzada en Python para Industria de Seguros
+
+Estructura Modular | Orientado a Marketing, Ventas y Experiencia del Cliente
+
+---
+
+Estructura de Carpetas
+
+project-root/
+│
+├── config/            # Configuración general, parámetros globales y settings
+│   ├── config.yaml
+│   ├── logging.yaml
+│   └── settings.py
+│
+├── pipelines/         # Pipelines de procesamiento, ETL, transformación y scoring
+│   ├── etl_pipeline.py
+│   ├── scoring_pipeline.py
+│   └── pipeline_runner.py
+│
+├── features/          # Ingeniería de variables, limpieza, selección y transformación
+│   ├── feature_engineering.py
+│   ├── feature_selection.py
+│   └── data_cleaning.py
+│
+├── models/            # Modelos de Machine Learning y NLP orientados a seguros
+│   ├── model_training.py
+│   ├── model_prediction.py
+│   └── model_evaluation.py
+│
+├── utils/             # Funciones utilitarias y helpers reutilizables
+│   ├── io_utils.py
+│   ├── nlp_utils.py
+│   └── geo_utils.py
+│
+└── main.py            # Script principal de ejecución
+
+---
+
+Descripción de Carpetas y Archivos
+
+config/
+- config.yaml → Parámetros generales de configuración.
+- logging.yaml → Configuración estándar de logs.
+- settings.py → Variables globales del proyecto (paths, claves, límites, flags, etc).
+
+pipelines/
+- etl_pipeline.py → Extracción, limpieza y carga de datos.
+- scoring_pipeline.py → Proceso de scoring de clientes, leads o campañas.
+- pipeline_runner.py → Orquestador de pipelines.
+
+features/
+- feature_engineering.py → Creación de nuevas variables y enriquecimiento.
+- feature_selection.py → Selección y reducción de variables.
+- data_cleaning.py → Limpieza y tratamiento de datos sucios o incompletos.
+
+models/
+- model_training.py → Entrenamiento de modelos supervisados y no supervisados.
+- model_prediction.py → Predicción y generación de resultados.
+- model_evaluation.py → Métricas, validación y análisis de performance.
+
+utils/
+- io_utils.py → Lectura y escritura de datos en diferentes formatos.
+- nlp_utils.py → Funciones específicas de NLP aplicado a seguros.
+- geo_utils.py → Funciones de análisis geolocalizado.
+
+main.py
+- Script unificado de ejecución para pruebas, despliegue o automatización.
+
+---
+
+Consideraciones Generales
+- Modularidad total
+- Escalabilidad orientada a múltiples casos de uso
+- Reutilización máxima de código
+- Estilo limpio y estándar PEP8
+- Compatible con MLflow / Prefect / Streamlit
+- Documentación integrada por módulo
